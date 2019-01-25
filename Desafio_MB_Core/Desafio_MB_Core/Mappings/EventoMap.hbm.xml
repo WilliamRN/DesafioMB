@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Desafio_MB_Core" namespace="Desafio_MB_Core.Models">
+ 
+  <class name="Evento" table="eventos">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">seq_evento_id</param>
+      </generator>
+    </id>
+    
+    <!--
+    <many-to-one name="id" column="id_organizador"></many-to-one>
+    <one-to-many name="Id" column="eventos.idevento"></one-to-many>
+    -->
+    <property name="NomeEvento" column="nome_evento"></property>
+    <property name="EnderecoRua" column="endereco_rua"></property>
+    <property name="EnderecoBairro" column="endereco_bairro"></property>
+    <property name="EnderecoComplemento" column="endereco_complemento"></property>
+    <property name="EnderecoCEP" column="endereco_cep"></property>
+    <property name="EnderecoCidade" column="endereco_cidade"></property>
+    <property name="EnderecoEstado" column="endereco_estado"></property>
+    <property name="EnderecoPais" column="endereco_pais"></property>
+    <property name="IdOrganizador" column="id_organizador"></property>
+    <property name="Preco" column="preco"></property>
+    <property name="EventoAtivo" column="evento_ativo"></property>
+    <property name="DataEvento" column="data_evento"></property>
+    <property name="QuantidadeMaximaIngressos" column="qtd_max_ingressos"></property>
+    <property name="QuantidadeVendida" column="qtd_vendida"></property>
+    <property name="Descricao" column="descricao"></property>
+ 
+  </class>
+ 
+</hibernate-mapping>

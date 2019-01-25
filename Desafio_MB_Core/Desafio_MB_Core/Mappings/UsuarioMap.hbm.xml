@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Desafio_MB_Core" namespace="Desafio_MB_Core.Models">
+ 
+  <class name="Usuario" table="usuarios">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">seq_usuario_id</param>
+      </generator>
+    </id>
+    
+    <!--
+    <one-to-many name="Id" column="evento.IdOrganizador"></one-to-many>
+    <one-to-many name="Id" column="ingresso.idusuario"></one-to-many>
+    
+    -->
+    <property name="RG" column="rg"></property>
+    <property name="CPF" column="cpf"></property>
+    <property name="EnderecoRua" column="endereco_rua"></property>
+    <property name="EnderecoBairro" column="endereco_bairro"></property>
+    <property name="EnderecoComplemento" column="endereco_complemento"></property>
+    <property name="EnderecoCEP" column="endereco_cep"></property>
+    <property name="EnderecoCidade" column="endereco_cidade"></property>
+    <property name="EnderecoEstado" column="endereco_estado"></property>
+    <property name="EnderecoPais" column="endereco_pais"></property>
+    <property name="Email" column="email"></property>
+    <property name="DataNascimento" column="data_nascimento"></property>
+    <property name="Sexo" column="sexo"></property>
+    <property name="ContaAtiva" column="conta_ativa"></property>
+    <property name="Nome" column="nome"></property>
+    <property name="TipoLogin" column="tipo_login"></property>
+    <property name="ImagemProfilePath" column="imagem_profile_path"></property>
+    <property name="LastToken" column="last_token"></property>
+    <property name="Login" column="login"></property>
+    <property name="Senha" column="senha"></property>
+    <property name="TipoAcesso" column="tipo_acesso"></property>
+    <property name="NumeroCartao" column="numero_cartao"></property>
+    <property name="NomeTitular" column="nome_titular"></property>
+    <property name="DataExpiracao" column="data_exp"></property>
+    <property name="TipoCartao" column="tipo_cartao"></property>
+    <property name="EnderecoCobrancaRua" column="endereco_cobrabca_rua"></property>
+    <property name="EnderecoCobrancaBairro" column="endereco_cobrabca_bairro"></property>
+    <property name="EnderecoCobrancaComplemento" column="endereco_cobrabca_complemento"></property>
+    <property name="EnderecoCobrancaCEP" column="endereco_cobrabca_cep"></property>
+    <property name="EnderecoCobrancaCidade" column="endereco_cobrabca_cidade"></property>
+    <property name="EnderecoCobrancaEstado" column="endereco_cobrabca_estado"></property>
+    <property name="EnderecoCobrancaPais" column="endereco_cobrabca_pais"></property>
+    <property name="SessionId" column="session_id"></property>
+    <property name="Subordinado" column="subordinado"></property>
+ 
+  </class>
+ 
+</hibernate-mapping>

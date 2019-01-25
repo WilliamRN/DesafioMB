@@ -1,0 +1,22 @@
+{
+  "SessionId": "T1qBTPzBu3",
+  "Evento" : {
+		"id" : "",
+		"nome_evento" : "",
+		"endereco_rua" : "",
+		"endereco_bairro" : "",
+		"endereco_complemento" : "",
+		"endereco_cep" : "",
+		"endereco_cidade" : "",
+		"endereco_estado" : "",
+		"endereco_pais" : "",
+		"id_organizador" : "",
+		"preco" : "",
+		"evento_ativo" : "",
+		"data_evento" : "",
+		"qtd_max_ingressos" : "",
+		"qtd_vendida" : "",
+		"descricao" : "",
+      
+   }
+}

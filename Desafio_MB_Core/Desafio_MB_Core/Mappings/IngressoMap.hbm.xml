@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Desafio_MB_Core" namespace="Desafio_MB_Core.Models">
+ 
+  <class name="Ingresso" table="ingressos">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">seq_ingresso_id</param>
+      </generator>
+    </id>
+    
+    <!--
+    <many-to-one name="IdEvento" column="id_evento"></many-to-one>
+    <many-to-one name="IdUsuario" column="id_usuario"></many-to-one>
+    -->
+    <property name="IdEvento" column="id_evento"></property>
+    <property name="IdUsuario" column="id_usuario"></property>
+    
+	  <property name="Validade" column="validade"></property>
+	  <property name="ValidoAte" column="valido_ate"></property>
+	  <property name="NotaFiscalPath" column="nota_fiscal_path"></property>
+	  <property name="DataPagamento" column="data_pagamento"></property>
+ 
+  </class>
+ 
+</hibernate-mapping>

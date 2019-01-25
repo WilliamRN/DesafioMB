@@ -1,0 +1,113 @@
+[Packets]
+
+#POST Login
+http://localhost:57623/desafiomb/login
+
+Accept-Encoding: gzip,deflate
+User-Agent: Fiddler
+Host: localhost:57623
+Content-Length: 49
+Content-Type: application/json
+
+{
+	"usuario": "admin",
+	"senha": "123456"
+}
+
+#POST novo visitante
+http://localhost:57623/desafiomb/usuario/visitante
+
+Accept-Encoding: gzip,deflate
+User-Agent: Fiddler
+Host: localhost:57623
+Content-Length: 1132
+Content-Type: application/json
+
+{
+	"sessionid" : "7dlbfylwZt",
+	"usr" : {  
+	   "id":0,
+	   "rg":"382572749",
+	   "cpf":"43709948029",
+	   "enderecoRua":"Rua Jardim Magnólia",
+	   "enderecoBairro":"Alto do Sumaré",
+	   "enderecoComplemento":"",
+	   "enderecoCEP":"59634036",
+	   "enderecoCidade":"Mossoró",
+	   "enderecoEstado":"RN",
+	   "enderecoPais":"Brasil",
+	   "email":"claudioo@mail.com",
+	   "dataNascimento":"1951-01-13T00:00:00",
+	   "sexo":2,
+	   "contaAtiva":1,
+	   "nome":"Cláudio Otávio Bernardes",
+	   "tipoLogin":1,
+	   "imagemProfilePath":"",
+	   "lastToken":"",
+	   "login":"claudioo",
+	   "senha":"123456",
+	   "tipoAcesso":4,
+	   "numeroCartao":"99994444111122222",
+	   "nomeTitular":"CLÁUDIO OTÁVIO BERNARDES",
+	   "dataExpiracao":"2020-09-01T00:00:00",
+	   "tipoCartao":1,
+	   "enderecoCobrancaRua":"Rua Jardim Magnólia",
+	   "enderecoCobrancaBairro":"Alto do Sumaré",
+	   "enderecoCobrancaComplemento":"",
+	   "enderecoCobrancaCEP":"59634036",
+	   "enderecoCobrancaCidade":"Mossoró",
+	   "enderecoCobrancaEstado":"RN",
+	   "enderecoCobrancaPais":"Brasil",
+	   "sessionId":null,
+	   "subordinado":0
+	}
+}
+
+#GET visitante by session
+http://localhost:57623/desafiomb/usuario/visitante?sessionid=
+http://localhost:57623/desafiomb/usuario/visitante?sessionid=ni45ZVMZCR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

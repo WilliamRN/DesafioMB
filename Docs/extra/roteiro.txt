@@ -1,0 +1,272 @@
+roteiro:
+
+Accept-Encoding: gzip,deflate
+User-Agent: Fiddler
+Host: localhost:57623
+Content-Length: 1111
+Content-Type: application/json
+
+
+=================================
+Visitante Criar
+http://localhost:57623/desafiomb/usuario/visitante
+
+{
+	"sessionid" : null,
+	"usr" : {  
+	   "id":0,
+	   "rg":"382572749",
+	   "cpf":"43709948029",
+	   "enderecoRua":"Rua Jardim Magnólia",
+	   "enderecoBairro":"Alto do Sumaré",
+	   "enderecoComplemento":"",
+	   "enderecoCEP":"59634036",
+	   "enderecoCidade":"Mossoró",
+	   "enderecoEstado":"RN",
+	   "enderecoPais":"Brasil",
+	   "email":"claudioo@mail.com",
+	   "dataNascimento":"1951-01-13T00:00:00",
+	   "sexo":2,
+	   "contaAtiva":1,
+	   "nome":"Cláudio Otávio Bernardes",
+	   "tipoLogin":1,
+	   "imagemProfilePath":"",
+	   "lastToken":"",
+	   "login":"claudioo",
+	   "senha":"123456",
+	   "tipoAcesso":1,
+	   "numeroCartao":"99994444111122222",
+	   "nomeTitular":"CLÁUDIO OTÁVIO BERNARDES",
+	   "dataExpiracao":"2020-09-01T00:00:00",
+	   "tipoCartao":1,
+	   "enderecoCobrancaRua":"Rua Jardim Magnólia",
+	   "enderecoCobrancaBairro":"Alto do Sumaré",
+	   "enderecoCobrancaComplemento":"",
+	   "enderecoCobrancaCEP":"59634036",
+	   "enderecoCobrancaCidade":"Mossoró",
+	   "enderecoCobrancaEstado":"RN",
+	   "enderecoCobrancaPais":"Brasil",
+	   "sessionId":null,
+	   "subordinado":0
+	}
+}
+
+=================================
+Visitante Login
+http://localhost:57623/desafiomb/login
+
+{
+	"usuario":"claudioo",
+	"senha":"123456"
+}
+=================================
+Visitante Logout
+http://localhost:57623/desafiomb/logout
+
+{
+	"sessionid" : "__________"
+}
+{
+	"sessionid" : "Apj6rDoH3m"
+}
+
+=================================
+
+=================================
+Get Usuários  
+http://localhost:57623/desafiomb/usuario/listar
+
+//Como Admin
+{
+	"sessionid" : "Az3bUn5D6Z"
+}
+//Como Gerente N2 Eloi
+{
+	"sessionid" : "R8HsbHQkuP"
+}
+=================================
+Criação de Usuário (Gerente Nível1)
+http://localhost:57623/desafiomb/usuario/criacao
+
+//Gerente N2 (Eloi) cria GerenteN1
+{
+	"sessionid" : "R8HsbHQkuP",
+	"usr" : {  
+	   "id":0,
+	   "email":"felixr@mail.com",
+	   "contaAtiva":1,
+	   "nome":"Félix Ragatton Bernardes",
+	   "tipoLogin":1,
+	   "login":"felixr",
+	   "senha":"123456",
+	   "tipoAcesso":4,
+	   "subordinado":2
+	}
+}
+=================================
+Alteração de Usuário
+http://localhost:57623/desafiomb/usuario/atualizar
+
+//Gerente N2 (Eloi) altera GerenteN1
+{
+	"sessionid" : "R8HsbHQkuP",
+	"usr" : {  
+	   "id":9,
+	   "email":"felixr@mail.com",
+	   "contaAtiva":1,
+	   "nome":"Félix Roberto Bernardes",
+	   "tipoLogin":1,
+	   "login":"felixr",
+	   "senha":"123456",
+	   "tipoAcesso":4,
+	   "subordinado":2
+	}
+}
+=================================
+Desativação de Usuário
+http://localhost:57623/desafiomb/usuario/desabilitar
+
+//Gerente N2 (Eloi) desativa GerenteN1
+{
+	"sessionid" : "R8HsbHQkuP",
+	"usrId" : 9
+}
+=================================
+
+=================================
+Get Eventos
+http://localhost:57623/desafiomb/evento/visitante
+
+//Gerente N2 (Eloi) obtem lista de Eventos
+{
+	"sessionid" : "R8HsbHQkuP"
+}
+
+//Visitante (Teresa) obtem lista de Eventos
+{
+	"sessionid" : "wAuHRjPraD"
+}
+
+//Admin obtem lista de Eventos
+{
+	"sessionid" : "Az3bUn5D6Z"
+}
+=================================
+Criar Evento
+http://localhost:57623/desafiomb/evento/criacao
+
+//Gerente N2 (Eloi) cria novo Evento
+{  
+   "sessionid" : "R8HsbHQkuP",
+   "evt" : 
+      {  
+         "id":0,
+         "nomeEvento":"Evento 1",
+         "enderecoRua":"Rua 1",
+         "enderecoBairro":"Jardim 1",
+         "enderecoComplemento":"Salão 1",
+         "enderecoCEP":"29180000",
+         "enderecoCidade":"Campinas",
+         "enderecoEstado":"SP",
+         "enderecoPais":"Brasil",
+         "idOrganizador":0,
+         "preco":19.99,
+         "eventoAtivo":1,
+         "dataEvento":"2019-05-12T17:00:00",
+         "quantidadeMaximaIngressos":500,
+         "quantidadeVendida":0,
+         "descricao":"Evento 1."
+      }
+}
+=================================
+Alterar Evento
+http://localhost:57623/desafiomb/evento/alterar
+
+//Gerente N2 (Eloi) altera seu evento
+{  
+   "sessionid" : "R8HsbHQkuP",
+   "evt" : 
+      {  
+         "id":5,
+         "nomeEvento":"Evento 2",
+         "enderecoRua":"Rua 2",
+         "enderecoBairro":"Jardim 2",
+         "enderecoComplemento":"Salão 2",
+         "enderecoCEP":"29180000",
+         "enderecoCidade":"Campinas",
+         "enderecoEstado":"SP",
+         "enderecoPais":"Brasil",
+         "idOrganizador":0,
+         "preco":19.99,
+         "eventoAtivo":1,
+         "dataEvento":"2019-05-12T17:00:00",
+         "quantidadeMaximaIngressos":500,
+         "quantidadeVendida":0,
+         "descricao":"Evento 2."
+      }
+}
+=================================
+Desabilitar Evento
+http://localhost:57623/desafiomb/evento/desabilitar
+
+//Gerente N2 (Eloi) Desativa seu Evento
+{  
+   "sessionid" : "R8HsbHQkuP",
+   "evtid":5
+}
+=================================
+
+=================================
+Válidar Ingresso
+http://localhost:57623/desafiomb/validaringresso
+
+//Gerente N2 (Eloi) Valida um ingresso Válido
+{
+	"sessionid" : "R8HsbHQkuP",
+	"ingressoid" : 1
+}
+//Gerente N2 (Eloi) Valida um ingresso Expirado (falha)
+{
+	"sessionid" : "R8HsbHQkuP",
+	"ingressoid" : 2
+}
+//Gerente N2 (Eloi) Valida um ingresso para Evento desativado (Falha)
+{
+	"sessionid" : "R8HsbHQkuP",
+	"ingressoid" : 3
+}
+=================================
+
+=================================
+Comprar Ingresso
+http://localhost:57623/desafiomb/ingresso/comprar
+
+//Solome (Visitante) Compra Ingresso para Evento Válido.
+{  
+   "sessionid" : "z2oYuXuRrr",
+   "eventid":1,
+   "cvv":"462"
+}
+
+//Solome (Visitante) Compra Ingresso para Evento Válido. (Novamente, Falha)
+{  
+   "sessionid" : "z2oYuXuRrr",
+   "eventid":1,
+   "cvv":"462"
+}
+=================================
+
+=================================
+Obter Recomendações
+http://localhost:57623/desafiomb/evento/recomendacao
+
+//Solome (Visitante) obtem Recomendação.
+{
+	"sessionid" : "z2oYuXuRrr"
+}
+=================================
+
+
+
+
+

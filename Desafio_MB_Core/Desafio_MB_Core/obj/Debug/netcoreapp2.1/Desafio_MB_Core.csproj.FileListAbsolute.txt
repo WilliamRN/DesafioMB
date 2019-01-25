@@ -1,0 +1,15 @@
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\bin\Debug\netcoreapp2.1\Desafio_MB_Core.deps.json
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\bin\Debug\netcoreapp2.1\Desafio_MB_Core.runtimeconfig.json
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\bin\Debug\netcoreapp2.1\Desafio_MB_Core.runtimeconfig.dev.json
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\bin\Debug\netcoreapp2.1\Desafio_MB_Core.dll
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\bin\Debug\netcoreapp2.1\Desafio_MB_Core.pdb
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.csprojAssemblyReference.cache
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.csproj.CoreCompileInputs.cache
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.RazorAssemblyInfo.cache
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.RazorAssemblyInfo.cs
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.AssemblyInfoInputs.cache
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.AssemblyInfo.cs
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.RazorTargetAssemblyInfo.cache
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.dll
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\obj\Debug\netcoreapp2.1\Desafio_MB_Core.pdb
+C:\Users\William\source\repos\Desafio_MB_Core\Desafio_MB_Core\bin\Debug\netcoreapp2.1\hibernate.cfg.xml
