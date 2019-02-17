@@ -19,6 +19,7 @@ namespace Desafio_MB_Core.Controllers.RecomendacaoController
     public class RecomendacaoController : ControllerBase
     {
         ApiDesafioMB apidesafiomb = new ApiDesafioMB();
+        int b = 0;
 
         // POST 
         [HttpPost]
@@ -27,6 +28,7 @@ namespace Desafio_MB_Core.Controllers.RecomendacaoController
             ResponseRecomendacao result = new ResponseRecomendacao();
             if (!apidesafiomb.IsSessionOpen(data.sessionId))
             {
+                b += 1;
                 return result;
             }
             result.result = apidesafiomb.GetRecommendation(data.sessionId).ToArray();
