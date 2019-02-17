@@ -29,8 +29,6 @@ namespace Desafio_MB_Core.Controllers.RecomendacaoController
             if (!apidesafiomb.IsSessionOpen(data.sessionId))
             {
                 b += 1;
-                int a = 0;
-                a += 1;
 
                 return result;
             }

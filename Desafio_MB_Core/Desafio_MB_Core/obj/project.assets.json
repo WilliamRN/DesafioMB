@@ -12154,11 +12154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub2\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\Desafio_MB_Core.csproj",
+      "projectUniqueName": "D:\\GitHub\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\Desafio_MB_Core.csproj",
       "projectName": "Desafio_MB_Core",
-      "projectPath": "D:\\GitHub2\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\Desafio_MB_Core.csproj",
+      "projectPath": "D:\\GitHub\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\Desafio_MB_Core.csproj",
       "packagesPath": "C:\\Users\\William\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub2\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\obj\\",
+      "outputPath": "D:\\GitHub\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12224,13 +12224,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\GitHub2\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\obj\\Desafio_MB_Core.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
