@@ -12154,11 +12154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\William\\source\\repos\\Desafio_MB_Core\\Desafio_MB_Core\\Desafio_MB_Core.csproj",
+      "projectUniqueName": "D:\\GitHub\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\Desafio_MB_Core.csproj",
       "projectName": "Desafio_MB_Core",
-      "projectPath": "C:\\Users\\William\\source\\repos\\Desafio_MB_Core\\Desafio_MB_Core\\Desafio_MB_Core.csproj",
+      "projectPath": "D:\\GitHub\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\Desafio_MB_Core.csproj",
       "packagesPath": "C:\\Users\\William\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\William\\source\\repos\\Desafio_MB_Core\\Desafio_MB_Core\\obj\\",
+      "outputPath": "D:\\GitHub\\DesafioMB\\Desafio_MB_Core\\Desafio_MB_Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

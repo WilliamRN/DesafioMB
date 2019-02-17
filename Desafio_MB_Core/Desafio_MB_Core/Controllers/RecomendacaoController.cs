@@ -27,6 +27,8 @@ namespace Desafio_MB_Core.Controllers.RecomendacaoController
             ResponseRecomendacao result = new ResponseRecomendacao();
             if (!apidesafiomb.IsSessionOpen(data.sessionId))
             {
+                int a = 0;
+                a += 1;
                 return result;
             }
             result.result = apidesafiomb.GetRecommendation(data.sessionId).ToArray();
